@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './App.css'
+import './styles.css'
 import axios from 'axios';
 
 function App() {
