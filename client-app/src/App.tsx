@@ -6,6 +6,7 @@ function App() {
 
   const [activities, setActivities] = useState([]);
 
+
   useEffect(() => {
     axios.get('http://localhost:5000/api/activities').then(response => {
       console.log(response);
@@ -15,13 +16,18 @@ function App() {
 
   return (
     <>
-      <h1>Hello</h1>
+      <h1>Activities</h1>
       <div>
         <ul>
           {activities.map((activity: any) => (
             <li key={activity.id}>{activity.title}</li>
           ))}
         </ul>
+        <select>
+          {activities.map((activity: any) => (
+            <option key={activity.id}>{activity.title}</option>
+          ))}
+        </select>
       </div>
     </>
   )
