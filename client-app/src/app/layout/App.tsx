@@ -1,35 +1,35 @@
-import { useEffect, useState } from 'react';
-import './styles.css'
-import axios from 'axios';
-import { Activity } from '../models/activity';
-import NavBar from '../../components/navbar/NavBar';
+import { useEffect, useState } from "react";
+import "./styles.css";
+import axios from "axios";
+import { Activity } from "../models/activity";
+import NavBar from "../../components/navbar/NavBar";
+import { Container, List } from "semantic-ui-react";
 
 function App() {
-
   const [activities, setActivities] = useState<Activity[]>([]);
 
-
   useEffect(() => {
-    axios.get<Activity[]>('http://localhost:5000/api/activities')
-      .then(response => {
+    axios
+      .get<Activity[]>("http://localhost:5000/api/activities")
+      .then((response) => {
         console.log(response);
         setActivities(response.data);
-    })
-  }, [])
+      });
+  }, []);
 
   return (
     <>
-      <NavBar/>
-      <h1>Activities</h1>
-      <div>
-        <ul>
-          {activities.map(activity => (
-            <li key={activity.id}>{activity.title}</li>
+      <NavBar />
+      <Container style={{marginTop: '7em'}}>
+        <List>
+          {activities.map((activity) => (
+            <List.Item key={activity.id}>{activity.title}</List.Item>
           ))}
-        </ul>    
-      </div>
+        </List>
+      </Container>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
