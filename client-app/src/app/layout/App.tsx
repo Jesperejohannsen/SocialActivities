@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './styles.css'
 import axios from 'axios';
 import { Activity } from '../models/activity';
+import NavBar from '../../components/navbar/NavBar';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <>
+      <NavBar/>
       <h1>Activities</h1>
       <div>
         <ul>
