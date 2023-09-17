@@ -1,4 +1,4 @@
-import { Card, Image, Icon, Button } from "semantic-ui-react";
+import { Card, Image, Button } from "semantic-ui-react";
 import { Activity } from "../../../app/models/activity";
 
 interface Props {
