@@ -20,7 +20,7 @@ function App() {
           activity.date = activity.date.split("T")[0];
           activities.push(activity);
         });
-        setActivities(response);
+        setActivities(activities);
       });
   }, []);
 
