@@ -6,11 +6,13 @@ import { useEffect, useState } from "react";
 import { Activity } from "../models/activity";
 import { v4 as uuid } from "uuid";
 import agent from "../api/agent";
+import LoadingComponent from "./LoadingComponent";
 
 function App() {
   const [activities, setActivities] = useState<Activity[]>([]);
   const [selectedAcitivty, setSelectedActivity] = useState<Activity | undefined>(undefined);
   const [editMode, setEditMode] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
       agent.Activities.list()
@@ -21,6 +23,7 @@ function App() {
           activities.push(activity);
         });
         setActivities(activities);
+        setLoading(false);
       });
   }, []);
 
@@ -53,6 +56,7 @@ function App() {
     setActivities([...activities.filter(x => x.id !== id)]);
   }
 
+  if (loading) return <LoadingComponent content="Loading app" />
   return (
     <>
       <NavBar openForm={handleFormOpen}/>
