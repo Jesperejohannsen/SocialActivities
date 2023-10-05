@@ -3,6 +3,8 @@ using Application.Activities;
 using Application.Core;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 
 namespace API.Extensions
 {
@@ -33,6 +35,10 @@ namespace API.Extensions
 
             services.AddAutoMapper(typeof(MappingProfiles).Assembly);
 
+            services.AddFluentValidationAutoValidation();
+
+            services.AddValidatorsFromAssemblyContaining<Create>();
+            
             return services;
         }
     }

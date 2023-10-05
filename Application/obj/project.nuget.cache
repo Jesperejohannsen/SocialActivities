@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "e6j9nfkwIEtjbuwg2YaiDiH3tp2C322SovrkTgtQtZetu/yjzRCFzY7FoUAHDulpFT1XMBRlcJmzONLwWqH2nw==",
+  "dgSpecHash": "nq8Qy6Cxx+0htJtCYKBBrhCo/vm8ZHUyEBFW6x9W3k986VnWBceM1z807scDjnhGHKm1a8V0KRMjq4/rFxFqzA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jesper\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Jesper\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Jesper\\.nuget\\packages\\fluentvalidation\\11.7.1\\fluentvalidation.11.7.1.nupkg.sha512",
+    "C:\\Users\\Jesper\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\Jesper\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\Jesper\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
     "C:\\Users\\Jesper\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Jesper\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
