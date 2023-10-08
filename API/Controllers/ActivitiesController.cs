@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
+
+    // Remember to delete this file after you have completed the section on Identity
+    [AllowAnonymous]
     public class ActivitiesController : BaseApiController
     {  
 
