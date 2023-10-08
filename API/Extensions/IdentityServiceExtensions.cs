@@ -18,7 +18,7 @@ namespace API.Extensions
 
             .AddEntityFrameworkStores<DataContext>();
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["jtipg6G6b2iT9425lc3jpbsibdqB2T5oAMTpzFnLPJ9VrHBJGx3dFY1O4OZ3zOsz"]));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["TokenKey"]));
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer( opt => 
@@ -26,8 +26,7 @@ namespace API.Extensions
                     opt.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateIssuerSigningKey = true,
-                        IssuerSigningKey = new 
-                            SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["jtipg6G6b2iT9425lc3jpbsibdqB2T5oAMTpzFnLPJ9VrHBJGx3dFY1O4OZ3zOsz"])),
+                        IssuerSigningKey = key,
                         ValidateIssuer = true,
                         ValidIssuer = "localhost",
                         ValidateAudience = true,

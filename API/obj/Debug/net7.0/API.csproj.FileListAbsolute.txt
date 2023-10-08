@@ -91,3 +91,6 @@ C:\Users\Jesper\Desktop\SocialActivities\API\bin\Debug\net7.0\Microsoft.Identity
 C:\Users\Jesper\Desktop\SocialActivities\API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\Jesper\Desktop\SocialActivities\API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Jesper\Desktop\SocialActivities\API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Jesper\Desktop\SocialActivities\API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Jesper\Desktop\SocialActivities\API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Jesper\Desktop\SocialActivities\API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

@@ -8,6 +8,12 @@ namespace API.Services
 {
     public class TokenService
     {
+
+        private readonly IConfiguration _config;
+        public TokenService(IConfiguration config)
+        {
+            _config = config;
+        }
         public string CreateToken(AppUser user)
         {
             var claims = new List<Claim>
@@ -17,7 +23,7 @@ namespace API.Services
                 new Claim(ClaimTypes.Email, user.Email),
             };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("jtipg6G6b2iT9425lc3jpbsibdqB2T5oAMTpzFnLPJ9VrHBJGx3dFY1O4OZ3zOsz"));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["TokenKey"]));
 
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 
