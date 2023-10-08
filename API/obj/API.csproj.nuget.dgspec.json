@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jesper\\Desktop\\SocialActivities\\API\\API.csproj": {}
+    "c:\\Users\\Jesper\\Desktop\\SocialActivities\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jesper\\Desktop\\SocialActivities\\API\\API.csproj": {
+    "c:\\Users\\Jesper\\Desktop\\SocialActivities\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\API\\API.csproj",
+        "projectUniqueName": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\API\\API.csproj",
+        "projectPath": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Jesper\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\API\\obj\\",
+        "outputPath": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -25,17 +25,14 @@
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Application\\Application.csproj"
+              "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Application\\Application.csproj": {
+                "projectPath": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Application\\Application.csproj"
               }
             }
           }
@@ -54,6 +51,10 @@
               "target": "Package",
               "version": "[11.7.1, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.5, )"
@@ -67,6 +68,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.0.2, )"
             }
           },
           "imports": [
@@ -92,14 +97,14 @@
         }
       }
     },
-    "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Application\\Application.csproj": {
+    "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Application\\Application.csproj",
+        "projectUniqueName": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Application\\Application.csproj",
+        "projectPath": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Jesper\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Application\\obj\\",
+        "outputPath": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -121,11 +126,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj"
+              "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Persistence\\Persistence.csproj"
+              "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Persistence\\Persistence.csproj": {
+                "projectPath": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -177,14 +182,14 @@
         }
       }
     },
-    "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj": {
+    "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj",
+        "projectPath": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Jesper\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\obj\\",
+        "outputPath": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -217,6 +222,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -237,14 +248,14 @@
         }
       }
     },
-    "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Persistence\\Persistence.csproj": {
+    "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Persistence\\Persistence.csproj",
+        "projectPath": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Jesper\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Persistence\\obj\\",
+        "outputPath": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -266,8 +277,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj"
+              "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj"
               }
             }
           }

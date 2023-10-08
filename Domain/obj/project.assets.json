@@ -774,11 +774,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Jesper\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\Jesper\\Desktop\\SocialActivities\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -792,6 +792,8 @@
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
